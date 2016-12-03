@@ -3,6 +3,7 @@ const crypto = require('crypto');
 const nodemailer = require('nodemailer');
 const passport = require('passport');
 const User = require('../models/User');
+var path    = require("path");
 
 /**
  * GET /login
@@ -15,6 +16,7 @@ exports.getLogin = (req, res) => {
   res.render('account/login', {
     title: 'Login'
   });
+  //res.sendFile(path.join(__dirname+'/views/login.html'));
 };
 
 /**

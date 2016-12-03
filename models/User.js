@@ -23,7 +23,8 @@ const userSchema = new mongoose.Schema({
     location: String,
     website: String,
     picture: String
-  }
+  },
+  paymentMethods: Array
 }, { timestamps: true });
 
 /**
