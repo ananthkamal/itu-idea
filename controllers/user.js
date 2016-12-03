@@ -375,3 +375,12 @@ exports.postForgot = (req, res, next) => {
     res.redirect('/forgot');
   });
 };
+
+
+/**
+ * GET /login
+ * Login page.
+ */
+exports.register = (req, res) => {
+  res.sendFile(path.join(__dirname+'/views/register.html'));
+};

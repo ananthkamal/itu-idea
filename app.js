@@ -137,6 +137,7 @@ app.get('/payments', paymentsController.payments);
 app.post('/payments', paymentsController.addPaymentMethod);
 app.get('/cards', paymentsController.getCards);
 app.get('/pay', paymentsController.makePayment);
+app.get('/register', userController.register);
 
 
 /**
